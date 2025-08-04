@@ -416,3 +416,11 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# === Custom project rules ===
+
+# Local SQLite database
+contact.db
+
+# Sensitive config with email password
+appsettings.json
