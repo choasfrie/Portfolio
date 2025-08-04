@@ -1,4 +1,6 @@
 
+using Portfolio_Backend.Services;
+
 namespace Portfolio_Backend
 {
     public class Program
@@ -11,6 +13,7 @@ namespace Portfolio_Backend
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddSingleton<EmailService>();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
